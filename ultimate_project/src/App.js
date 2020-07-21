@@ -5,7 +5,26 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      буквы слова
+      <header className={'header'}>header</header>
+      <div className={'main-content'}>
+        <div className={'right-sidebar'}>
+          your walls
+          your something
+          your something
+          your something
+        </div>
+        <div className={'left-sidebar'}>
+          something else
+          something else
+          something else
+          something else
+        </div>
+        <div className={'walls'}>
+          <div className={'post'}>
+            post
+          </div>
+        </div>
+      </div>
     </div>
   );
 }

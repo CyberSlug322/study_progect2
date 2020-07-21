@@ -1,1 +1,22 @@
 .App{ background-color: aquamarine; }
+
+.header {
+    background-color: lightpink;
+}
+
+.left-sidebar {
+    background-color: lightsalmon;
+}
+
+.right-sidebar {
+    background-color: lightseagreen;
+}
+
+.post {
+    background-color: lightseagreen;
+}
+
+.main-content {
+    background-color: lightyellow;
+    display: flex;
+}
