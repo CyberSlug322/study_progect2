@@ -31,7 +31,11 @@ body {
     height: min-content;
     /* margin-left: 130px; */
     /* margin-top: 20px; */
-    margin: 20px 200px;
+    margin: 20px 0px;
+}
+
+.posts {
+    margin: 0px 200px;
 }
 
 .main-content {

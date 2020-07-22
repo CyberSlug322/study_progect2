@@ -3,6 +3,6 @@ import '../App.css'
 
 export const Post = (props) => {
     return (
-    <div className={'post'}>{props.postTitle}</div>
+    <div className={'post'}> {props.postTitle} </div>
     )
-}
+};

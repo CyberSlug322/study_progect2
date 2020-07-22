@@ -2,7 +2,13 @@ import React from 'react';
 import './App.css';
 import { Post } from './components/post';
 
-function App() {
+function App({state, dispatch}) {
+
+  let addPost = () => {
+    dispatch({type: 'ADD_POST',
+  postTitle: 'new title'})
+  }
+
   return (
     <div className="App">
       <header className={'header'}>header</header>
@@ -16,12 +22,13 @@ function App() {
         <div className={'walls'}>
           <div className={'posts'}>
             <div className={'post'}>
-              post commit
+              post
           </div>
             <div className={'post'}>
               post
           </div>
-            <Post postTitle={'post title'}/>
+            <Post postTitle={'post title'} />
+            <button onClick={addPost}> add post </button>
           </div>
           <div className={'right-sidebar'}>
             something else
