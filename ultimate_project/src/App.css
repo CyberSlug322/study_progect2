@@ -1,22 +1,53 @@
+body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
 .App{ background-color: aquamarine; }
 
 .header {
     background-color: lightpink;
 }
 
-.left-sidebar {
+.right-sidebar {
     background-color: lightsalmon;
+    position: relative;
+    width: 170px;
+    height: 270px;
+    /* margin: 0 0 0 auto; */
 }
 
-.right-sidebar {
+.left-sidebar {
     background-color: lightseagreen;
+    width: 300px;
+    height: 500px;
 }
 
 .post {
-    background-color: lightseagreen;
+    background-color: rgb(32, 66, 178);
+    width: 600px;
+    min-height: 100px;
+    height: min-content;
+    /* margin-left: 130px; */
+    /* margin-top: 20px; */
+    margin: 20px 200px;
 }
 
 .main-content {
     background-color: lightyellow;
     display: flex;
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.walls {
+    background-color: mediumorchid;
+    position: relative;
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    align-items: stretch;
 }

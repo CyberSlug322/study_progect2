@@ -7,22 +7,30 @@ function App() {
     <div className="App">
       <header className={'header'}>header</header>
       <div className={'main-content'}>
-        <div className={'right-sidebar'}>
+        <div className={'left-sidebar'}>
           your walls
           your something
           your something
           your something
         </div>
-        <div className={'left-sidebar'}>
-          something else
-          something else
-          something else
-          something else
-        </div>
         <div className={'walls'}>
-          <div className={'post'}>
-            post
+          <div className={'posts'}>
+            <div className={'post'}>
+              post
           </div>
+            <div className={'post'}>
+              post
+          </div>
+            <div className={'post'}>
+              post
+          </div>
+          </div>
+          <div className={'right-sidebar'}>
+            something else
+            something else
+            something else
+            something else
+        </div>
         </div>
       </div>
     </div>
