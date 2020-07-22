@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import { Post } from './components/post';
 
 function App() {
   return (
@@ -16,14 +16,12 @@ function App() {
         <div className={'walls'}>
           <div className={'posts'}>
             <div className={'post'}>
-              post
+              post commit
           </div>
             <div className={'post'}>
               post
           </div>
-            <div className={'post'}>
-              post
-          </div>
+            <Post postTitle={'post title'}/>
           </div>
           <div className={'right-sidebar'}>
             something else
