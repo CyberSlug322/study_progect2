@@ -6,7 +6,7 @@ import { RightSideBar } from './right-sidebar'
 export const  Walls = (props) => {
     return (
     <div className={'walls'}>
-        <Posts />
+        <Posts state = {props.state} dispatch = {props.dispatch}/>
         <RightSideBar RightSideBarText={'somethi\nng else something\n elssom\nething elsesome\nthing el\nse'} />
     </div>
     )

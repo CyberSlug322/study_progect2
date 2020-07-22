@@ -8,16 +8,7 @@ export const  MainContent = (props) => {
     return (
     <div className={'main-content'}>
         <LeftSideBar LeftSideBarTitleTextItem={'ur walls \n something \n smothing \n sumsing \n samsink'} />
-         
-        
-        
-         
-         <Walls />
-           
-            
-           
-          
-             
+         <Walls state ={props.state} dispatch = {props.dispatch}/>     
     </div>
     )
 }

@@ -3,11 +3,14 @@ import '../App.css'
 import { Post } from './post';   
 
 export const  Posts = (props) => {
+    let addPost = () => {
+        props.dispatch({type: 'ADD_POST',
+      postTitle: 'new title'})
+      };
     return (
     <div className={'posts'}>
-         <Post postTitle={'нозваниее1'} />
-             <Post postTitle={'нозваниее2'} />
-             <Post postTitle={'нозваниее3'} />
+        {props.state.posts.map((post)=><Post postTitle={post.postTitle} />)}
+             <button onClick={addPost}>add post</button>
     </div>
     )
 }

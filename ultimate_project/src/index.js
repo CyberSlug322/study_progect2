@@ -5,21 +5,15 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { store } from './store/store';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App state = {store.getState()} dispatch = {store.dispatch} />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
 let render = () => {
-  debugger
   ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <App state = {store.getState()} dispatch = {store.dispatch}/>
   </React.StrictMode>,
   document.getElementById('root')
-);}
+)}
+
+render();
 
 store.subscribe(render)
 
