@@ -16,7 +16,7 @@ function App() {
         <div className={'walls'}>
           <div className={'posts'}>
             <div className={'post'}>
-              post
+              post commit
           </div>
             <div className={'post'}>
               post
