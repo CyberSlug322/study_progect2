@@ -1,7 +1,7 @@
 import React from 'react';
-import { Post } from './post'
-import { RightSideBar } from './right-sidebar'
-import '../App.css';
+import { Post } from '../Walls/post'
+import { RightSideBar } from '../Common/right-sidebar'
+// import '../App.css';
 
 export const MyWall = (props) => {
 
