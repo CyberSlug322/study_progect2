@@ -9,7 +9,7 @@ export const MyWall = (props) => {
     //     props.dispatch(
     //         {
     //             type: 'ADD_POST',
-    //             postTitle: 'new title'
+    //         123    postTitle: 'new title'
     //         })
     // };
 

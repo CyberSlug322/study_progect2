@@ -12,8 +12,8 @@ export const MainContent = (props) => {
         <div className={'main-content'}>
             <BrowserRouter>
                 <LeftSideBar  />
-                {/* <Walls state={props.state} dispatch={props.dispatch} /> */}
-                {/* <MyWall /> */}
+                {/* <Walls 12312state={props.state} dispatch={props.dispatch} /> */}
+                { /* 123 <MyWall /> */}
 
                 <Route path={'/myWall'} component={()=><MyWall state={props.state} dispatch={props.dispatch}/>} />
                 <Route path={'/walls'} component={()=><Walls state={props.state} dispatch={props.dispatch}/>} />

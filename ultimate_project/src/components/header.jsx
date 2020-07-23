@@ -6,3 +6,4 @@ export const Header = (props) => {
     <header className={'header'}>{props.header}</header>
     )
 }
+ 
