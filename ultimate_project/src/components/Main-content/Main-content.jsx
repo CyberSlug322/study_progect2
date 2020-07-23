@@ -2,7 +2,7 @@ import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom'
 import style from './main-content.module.css'
 import { LeftSideBar } from './left-sidebar';
-import { Walls } from './Walls/Walls';
+import { Walls } from './walls/walls';
 import { MyWall } from './my-wall/my-wall';
 
 

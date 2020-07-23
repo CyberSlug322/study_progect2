@@ -1,7 +1,7 @@
 import React from 'react';
 // import '../App.css'         
-import { Posts } from './Posts'
-import { RightSideBar } from '../Common/right-sidebar'
+import { Posts } from './posts'
+import { RightSideBar } from '../common/right-sidebar'
 
 export const  Walls = (props) => {
     return (
