@@ -1,9 +1,8 @@
 import React from 'react';
-import { Post } from '../Walls/post'
-import { RightSideBar } from '../Common/right-sidebar'
-// import '../App.css';
+import { Post } from '../Walls/post';
+import { RightSideBar } from '../Common/right-sidebar';
 
-export const MyWall = (props) => {
+export const MyWall = ({state, dispatch}) => {
 
     // let addPost = () => {
     //     props.dispatch(
@@ -12,11 +11,10 @@ export const MyWall = (props) => {
     //         123    postTitle: 'new title'
     //         })
     // };
-
     return (
         <div className={'walls'}>
             <div className={'posts'}>
-                {props.state.myPosts.map((post) => { return <Post postTitle={post.postTitle} /> })}
+                {state.user.userTred.posts.map((post) => { return <Post postTitle={post.postTitle} /> })}
                 {/* <button onClick={addPost}>add post</button> */}
             </div>
 

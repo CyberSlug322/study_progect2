@@ -2,9 +2,9 @@ import React from 'react';
 // import '../App.css'
 import { Post } from './post';
 
-export const Posts = (props) => {
+export const Posts = ({state, dispatch}) => {
     let addPost = () => {
-        props.dispatch(
+        dispatch(
             {
                 type: 'ADD_POST',
                 postTitle: 'new title'
@@ -12,7 +12,7 @@ export const Posts = (props) => {
     };
     return (
         <div className={'posts'}>
-            {props.state.posts.map( (post) => {return <Post postTitle={post.postTitle} />} )}
+            {state.treds[0].posts.map( (post) => {return <Post postTitle={post.postTitle} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )
