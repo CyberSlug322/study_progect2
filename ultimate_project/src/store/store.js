@@ -7,6 +7,11 @@ let initialState = {
         { postTitle: 'title post 1' },
         { postTitle: 'title post 2' },
         { postTitle: 'title post 3' },
+    ],
+    myPosts: [
+        { postTitle: 'title of my post 1' },
+        { postTitle: 'title of my post 2' },
+        { postTitle: 'title of my post 3' },
     ]
 }
 

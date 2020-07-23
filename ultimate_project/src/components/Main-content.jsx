@@ -1,14 +1,23 @@
 import React from 'react';
-import '../App.css'     
+import { Route, BrowserRouter } from 'react-router-dom'
+import '../App.css'
 import { LeftSideBar } from './left-sidebar';
-import { Walls } from './Walls'
-    
+import { Walls } from './Walls';
+import { MyWall } from './my-wall';
 
-export const  MainContent = (props) => {
+
+
+export const MainContent = (props) => {
     return (
-    <div className={'main-content'}>
-        <LeftSideBar LeftSideBarTitleTextItem={'ur walls \n something \n smothing \n sumsing \n samsink'} />
-         <Walls state ={props.state} dispatch = {props.dispatch}/>     
-    </div>
+        <div className={'main-content'}>
+            <BrowserRouter>
+                <LeftSideBar  />
+                {/* <Walls state={props.state} dispatch={props.dispatch} /> */}
+                {/* <MyWall /> */}
+
+                <Route path={'/myWall'} component={()=><MyWall state={props.state} dispatch={props.dispatch}/>} />
+                <Route path={'/walls'} component={()=><Walls state={props.state} dispatch={props.dispatch}/>} />
+            </BrowserRouter>
+        </div>
     )
 }
