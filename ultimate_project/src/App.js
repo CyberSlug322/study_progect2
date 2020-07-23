@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Header } from './components/header';
-import { MainContent } from './components/Main-content'
+import { MainContent } from './components/Main-content/Main-content'
 function App({state, dispatch}) {
   
   return (
@@ -13,10 +13,3 @@ function App({state, dispatch}) {
 }
 
 export default App;
-// let addPost = () => {
-    //     props.dispatch(
-    //         {
-    //             type: 'ADD_POST',
-    //         123    postTitle: 'new title'
-    //         })
-    // };

@@ -29,10 +29,3 @@ let reducer = (state = initialState, action) => {
 }
 
 export let store = createStore(reducer);
-// let addPost = () => {
-    //     props.dispatch(
-    //         {
-    //             type: 'ADD_POST',
-    //         123    postTitle: 'new title'
-    //         })
-    // };
