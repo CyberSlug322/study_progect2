@@ -13,10 +13,3 @@ function App({state, dispatch}) {
 }
 
 export default App;
-// let addPost = () => {
-    //     props.dispatch(
-    //         {
-    //             type: 'ADD_POST',
-    //         123    postTitle: 'new title'
-    //         })
-    // };

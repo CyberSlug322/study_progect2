@@ -27,10 +27,3 @@ export const LeftSideBar = (props) => {
         </navbar>
     )
 }
-// let addPost = () => {
-    //     props.dispatch(
-    //         {
-    //             type: 'ADD_POST',
-    //         123    postTitle: 'new title'
-    //         })
-    // };
