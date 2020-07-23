@@ -1,27 +1,49 @@
-import {createStore} from 'redux';
+import { createStore } from 'redux';
 
 
 
 let initialState = {
-    posts: [
-        { postTitle: 'title post 1' },
-        { postTitle: 'title post 2' },
-        { postTitle: 'title post 3' },
+    treds: [
+        {
+            tredTitle: 'anime girls',
+            members: [
+                {
+                    userId: 121,
+                    userName: 'Viktor',
+                    userAvatarSrc: 'src'
+                }
+            ],
+            posts: [
+                { postTitle: 'title post 1' },
+                { postTitle: 'title post 2' },
+                { postTitle: 'title post 3' },
+            ]
+        }
     ],
-    myPosts: [
-        { postTitle: 'title of my post 1' },
-        { postTitle: 'title of my post 2' },
-        { postTitle: 'title of my post 3' },
-    ]
+    user: {
+        userId: 121,
+        UserName: 'Anton',
+        subscribeTreds: [],
+        userTred: {
+            tredTitle: 'anime girls',
+            members: [
+                {
+                    userId: 121,
+                    userName: 'Viktor',
+                    userAvatarSrc: 'src'
+                }
+            ],
+            posts: [
+                { postTitle: 'title user post 1' },
+                { postTitle: 'title user post 2' },
+                { postTitle: 'title user post 3' },
+            ]
+        }
+    }
 }
 
 let reducer = (state = initialState, action) => {
     switch (action.type) {
-        case 'ADD_POST':
-            let stateCopy = { ...state, posts: [...state.posts] };
-            let newPost = { postTitle: 'title of the new post' }
-            stateCopy.posts.push(newPost)
-            return stateCopy;
 
         default:
             return state;
@@ -29,10 +51,3 @@ let reducer = (state = initialState, action) => {
 }
 
 export let store = createStore(reducer);
-// let addPost = () => {
-    //     props.dispatch(
-    //         {
-    //             type: 'ADD_POST',
-    //         123    postTitle: 'new title'
-    //         })
-    // };
