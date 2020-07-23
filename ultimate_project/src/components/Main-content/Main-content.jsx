@@ -1,6 +1,6 @@
 import React from 'react';
 import { Route, BrowserRouter } from 'react-router-dom'
-// import '../App.css'
+import style from './main-content.module.css'
 import { LeftSideBar } from './left-sidebar';
 import { Walls } from './Walls/Walls';
 import { MyWall } from './my-wall/my-wall';
@@ -10,7 +10,7 @@ import { MyWall } from './my-wall/my-wall';
 
 export const MainContent = (props) => {
     return (
-        <div className={'main-content'}>
+        <div className={style.mainContent}>
             <BrowserRouter>
                 <LeftSideBar  />
                 <Route path={'/myWall'} component={()=><MyWall state={props.state} dispatch={props.dispatch}/>} />

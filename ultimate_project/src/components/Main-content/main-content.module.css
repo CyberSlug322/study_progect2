@@ -1,0 +1,8 @@
+.mainContent {
+    background-color: lightyellow;
+    display: flex;
+    /* min-height: 100%; */
+    width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+}
