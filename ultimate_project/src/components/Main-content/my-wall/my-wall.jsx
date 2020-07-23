@@ -1,12 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD
 import { Post } from '../walls/post'
 import { RightSideBar } from '../common/right-sidebar'
 // import '../App.css';
-=======
-import { Post } from '../Walls/post';
-import { RightSideBar } from '../Common/right-sidebar';
->>>>>>> master
 
 export const MyWall = ({state, dispatch}) => {
 
