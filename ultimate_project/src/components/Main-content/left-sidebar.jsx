@@ -1,26 +1,40 @@
-import React from 'react';
-// import '../App.css'         
+import React from 'react';        
 import { NavLink } from 'react-router-dom';
+import style from './main-content.module.css';
+
+
 
 export const LeftSideBar = (props) => {
     return (
-    <navbar className={'LeftSideBar'}>
+    <navbar className={style.LeftSideBar}>
+
+        <NavLink to={'/homePage'}>
+            <div>
+                home page
+            </div>
+        </NavLink>
+
+        <NavLink to={'/treds'}>
+            <div>
+                treds
+            </div>
+        </NavLink>
         
-        <NavLink to={'/myWall'}>
+        <NavLink to={'/recommended'}>
             <div>
-                my wall
+                recommended
             </div>
         </NavLink>
 
-        <NavLink to={'/walls'}>
+        <NavLink to={'/notifications'}>
             <div>
-                walls
+                deadfications
             </div>
         </NavLink>
 
-        <NavLink to={'/pic'}>
+        <NavLink to={'/anime'}>
             <div>
-                devka
+                random devka
             </div>
         </NavLink>
         

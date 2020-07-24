@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom'
-import style from './main-content.module.css'
+import { Route, BrowserRouter } from 'react-router-dom';
+import style from './main-content.module.css';
 import { LeftSideBar } from './left-sidebar';
-import { Walls } from './walls/walls';
-import { MyWall } from './my-wall/my-wall';
+import { Treds } from './treds/treds';
+import { HomePage } from './home-page/home-page';
 
 
 
@@ -13,9 +13,9 @@ export const MainContent = ({state, dispatch}) => {
         <div className={style.mainContent}>
             <BrowserRouter>
                 <LeftSideBar  />
-                <Route path={'/myWall'} component={()=><MyWall state={state} dispatch={dispatch}/>} />
-                <Route path={'/walls'} component={()=><Walls state={state} dispatch={dispatch}/>} />
-                {/* <Route path={'/pic'} component={()=><img src={require('./pic.jpg')} alt = "Not found "/>} /> */}
+                <Route path={'/homePage'} component={()=><HomePage state={state} dispatch={dispatch}/>} />
+                <Route path={'/treds'} component={()=><Treds state={state} dispatch={dispatch}/>} />
+                <Route path={'/anime'} component={()=><img src={require('./common/pic.jpg')} alt = "Not found "/>} /> 
             </BrowserRouter>
         </div>
     )

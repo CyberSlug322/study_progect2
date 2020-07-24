@@ -1,10 +1,10 @@
 import React from 'react';
-// import '../App.css'         
+import style from './right-sidebar.module.css';         
 
 export const RightSideBar = (props) => {
     debugger
     return (
-    <div className={'RightSideBar'}>{props.RightSideBarText}
+    <div className={style.RightSideBar}>{props.RightSideBarText}
     </div>
     )
 }

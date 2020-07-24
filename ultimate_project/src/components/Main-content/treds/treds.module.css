@@ -1,14 +1,14 @@
-.walls {
-    background-color: mediumorchid;
+.treds {
+    background-color: rgb(130, 27, 156);
     position: relative;
-    /* min-height: 100vh; */
+     min-height: 100vh; 
     min-width: 95%;
     display: flex;
     align-items: stretch;
 }
 .post {
-    background-color: rgb(32, 66, 178);
-    width: 600px;
+    background-color: rgb(143, 189, 235);
+    width: 500px;
     min-height: 100px;
     height: min-content;
     /* margin-left: 130px; */
