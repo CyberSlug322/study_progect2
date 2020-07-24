@@ -2,7 +2,7 @@ import React from 'react';
 // import '../App.css'         
 import { NavLink } from 'react-router-dom';
 
-export const LeftSideBar = (props) => {
+export const Navbar = (props) => {
     return (
     <navbar className={'LeftSideBar'}>
         
