@@ -54,7 +54,9 @@ let profileState = {
 
 const profileReducer = (state = profileState, action) => {
     if (action.type === 'CHANGE_PROFILE_TEXT') {
-        return {...state, profileText: action.text}
+        state.profileText = action.text;
+        // return {...state, profileText: action.text}
+        return state
     }
     return state;
 }

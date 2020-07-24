@@ -13,11 +13,9 @@
 }
 
 .button {
-    background-color: rgb(23, 148, 106);
+    /* background-color: rgb(23, 148, 106); */
     margin-top: 8px;
     padding-left: 10px;
-    text-decoration: none;
-    color: #000
 }
 
 .link {
