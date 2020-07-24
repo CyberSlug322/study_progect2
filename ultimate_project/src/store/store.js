@@ -49,7 +49,7 @@ let reducer = (state = initialState, action) => {
 }
 
 let profileState = {
-    profileText: 'sss'
+    profileText: ''
 }
 
 const profileReducer = (state = profileState, action) => {
