@@ -2,7 +2,7 @@ import React from 'react';
 import { Route } from 'react-router-dom'
 import style from './main-content.module.css'
 import { Walls } from './walls/walls';
-import { Treds } from './treds';
+import { Treds } from './treds/treds';
 import { Profile } from './profile/profile';
 
 
