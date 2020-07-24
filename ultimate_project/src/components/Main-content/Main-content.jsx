@@ -1,9 +1,9 @@
 import React from 'react';
-import { Route, BrowserRouter } from 'react-router-dom';
-import style from './main-content.module.css';
-import { LeftSideBar } from './left-sidebar';
-import { Treds } from './treds/treds';
-import { HomePage } from './home-page/home-page';
+import { Route } from 'react-router-dom'
+import style from './main-content.module.css'
+import { Walls } from './walls/walls';
+import { Treds } from './treds';
+import { Profile } from './profile/profile';
 
 
 
@@ -11,12 +11,10 @@ import { HomePage } from './home-page/home-page';
 export const MainContent = ({state, dispatch}) => {
     return (
         <div className={style.mainContent}>
-            <BrowserRouter>
-                <LeftSideBar  />
-                <Route path={'/homePage'} component={()=><HomePage state={state} dispatch={dispatch}/>} />
-                <Route path={'/treds'} component={()=><Treds state={state} dispatch={dispatch}/>} />
-                <Route path={'/anime'} component={()=><img src={require('./common/pic.jpg')} alt = "Not found "/>} /> 
-            </BrowserRouter>
+                {/* <Route path={'/myWall'} component={()=><MyWall state={state} dispatch={dispatch}/>} /> */}
+                <Route path={'/walls/walls'} component={()=><Walls state={state} dispatch={dispatch}/>} />
+                <Route path={'/myTreds'} component={()=><Treds/>} />
+                <Route path={'/profile/profile'} component={()=><Profile state={state.profile} dispatch={dispatch}/>} />
         </div>
     )
 }
