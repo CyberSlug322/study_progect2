@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { Header } from './components/header';
-import { MainContent } from './components/main-content/Main-content'
+import { MainContent } from './components/main-content/main-content'
 import { Navbar } from './components/navbar';
 function App({state, dispatch}) {
   
