@@ -34,6 +34,7 @@ import style from './profile.module.css'
 // }
 
 export const Profile = ({ state, dispatch }) => {
+
     const textAreaRef = React.createRef();
     const changeText = () => {
         dispatch({
@@ -42,7 +43,7 @@ export const Profile = ({ state, dispatch }) => {
         })
     };
 
-    const Text = () => {
+    // const Text = () => {
         return (
             <div className={style.profile}>
             <img src={'https://i.pinimg.com/236x/9a/da/96/9ada96a378cf24b35ec421125625cdc3.jpg'}
@@ -52,9 +53,9 @@ export const Profile = ({ state, dispatch }) => {
                 onChange={changeText} value={state.profileText} />
         </div>
         )
-    }
+    // }
 
-    return (
-        <Text/>
-    )
+    // return (
+    //     <Text/>
+    // )
 }
