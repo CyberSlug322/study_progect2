@@ -1,13 +1,7 @@
 import React from 'react';
-<<<<<<< HEAD:ultimate_project/src/components/Main-content/home-page/home-page.jsx
 import { Post } from '../treds/post'
-import { RightSideBar } from '../common/right-sidebar'
+import { RightSideBar } from '../treds/right-sidebar'
 import style from './home-page.module.css';
-=======
-// import { Post } from '../walls/post'
-// import { RightSideBar } from '../common/right-sidebar'
-// import '../App.css';
->>>>>>> 179fe68d5c135602f91e0ca7b3d395997c2fe112:ultimate_project/src/components/Main-content/my-wall/my-wall.jsx
 
 export const HomePage = ({state, dispatch}) => {
 
@@ -26,11 +20,7 @@ export const HomePage = ({state, dispatch}) => {
                 {/* <button onClick={addPost}>add post</button> */}
             </div>
 
-<<<<<<< HEAD:ultimate_project/src/components/Main-content/home-page/home-page.jsx
             <RightSideBar RightSideBarText={'something'} />
-=======
-            {/* <RightSideBar RightSideBarText={'somethi\nng else something\n elssom\nething elsesome\nthing el\nse'} /> */}
->>>>>>> 179fe68d5c135602f91e0ca7b3d395997c2fe112:ultimate_project/src/components/Main-content/my-wall/my-wall.jsx
         </div>
     )
 }

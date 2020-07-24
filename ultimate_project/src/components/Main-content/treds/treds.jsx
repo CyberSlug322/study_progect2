@@ -1,6 +1,6 @@
 import React from 'react';      
 import { Posts } from './posts';
-import { RightSideBar } from '../common/right-sidebar';
+import { RightSideBar } from '../treds/right-sidebar';
 import style from './treds.module.css';
 
 export const  Treds = ({state, dispatch}) => {

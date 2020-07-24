@@ -7,7 +7,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: aquamarine;
-  background-image: url('./components/Main-content/Common/hitagi.png');
+  background-image: url('./components/main-content/common/hitagi.png');
   background-size: 100%;
   background-attachment: fixed;
 }
