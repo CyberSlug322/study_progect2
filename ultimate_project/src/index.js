@@ -4,14 +4,18 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { store } from './store/store';
+import { BrowserRouter } from 'react-router-dom';
 
 let render = () => {
   ReactDOM.render(
-  <React.StrictMode>
-    <App state = {store.getState()} dispatch = {store.dispatch}/>
-  </React.StrictMode>,
-  document.getElementById('root')
-)}
+    <React.StrictMode>
+      <BrowserRouter>
+        <App state={store.getState()} dispatch={store.dispatch} />
+      </BrowserRouter>
+    </React.StrictMode>,
+    document.getElementById('root')
+  )
+}
 
 render();
 
