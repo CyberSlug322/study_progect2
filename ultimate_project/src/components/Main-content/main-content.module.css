@@ -1,13 +1,8 @@
 .mainContent {
-    background-color: lightyellow;
-    display: flex;
-    /* min-height: 100%; */
-    width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
-.LeftSideBar {
-    background-color: lightseagreen;
-    width: 300px;
-    height: 500px;
+     /* background-color: lightyellow; */
+    /* width: 1200px; */
+    margin-top: 7px;
+    margin-left: 7px;
+    grid-area: main;
+    opacity: 70%;
 }

@@ -1,8 +1,8 @@
 import React from 'react';
-import '../App.css'         
+import style from './header.module.css'     
 
 export const Header = (props) => {
     return (
-    <header className={'header'}>{props.header}</header>
+    <header className={style.header}>header</header>
     )
 }
