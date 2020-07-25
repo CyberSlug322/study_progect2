@@ -41,7 +41,13 @@ let initialState = {
 }
 
 let reducer = (state = initialState, action) => {
+    if ( state === initialState ) {
+        return {...state}
+    }
     switch (action.type) {
+        case 'ADD_POST' : return {...state, postTitle: 'new title' }
+
+        
 
         default:
             return state;
@@ -54,9 +60,9 @@ let profileState = {
 
 const profileReducer = (state = profileState, action) => {
     if (action.type === 'CHANGE_PROFILE_TEXT') {
-        state.profileText = action.text;
-        // return {...state, profileText: action.text}
-        return state
+        //state.profileText = action.text;
+         return {...state, profileText: action.text}
+        //return state
     }
     return state;
 }
