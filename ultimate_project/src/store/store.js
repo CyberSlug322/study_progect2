@@ -40,7 +40,7 @@ let initialState = {
     }
 }
 
-let reducer = (state = initialState, action) => {
+let postreducer = (state = initialState, action) => {
     if ( state === initialState ) {
         return {...state}
     }
@@ -71,7 +71,7 @@ const profileReducer = (state = profileState, action) => {
 
 export let store = createStore(combineReducers({
     profile: profileReducer,
-    reducer
+    post: postreducer 
 }));
 
 window.store = store

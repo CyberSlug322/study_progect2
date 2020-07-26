@@ -1,5 +1,8 @@
 .header {
-    background-color: rgb(145, 5, 26);
-    height: 60px;
-
+    grid-area: header;
+    /* background-color: rgb(52, 192, 145); */
+    opacity: 70%;
+    height: 500px;
+    background-image: url('../main-content/common/fire.png');
+    background-color: rgb(197, 10, 10);
 }
