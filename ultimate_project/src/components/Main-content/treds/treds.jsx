@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './treds/treds.module.css'
+import style from './treds.module.css'
 import { NavLink } from 'react-router-dom';
   import{ Posts } from './posts/posts';
  
