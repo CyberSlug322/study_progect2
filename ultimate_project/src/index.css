@@ -6,8 +6,11 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  /* background-image: url('./components/main-content/common/hitagi.png'); */
+  background-image: url('./components/main-content/common/veg.png');
+  
   background-color: aquamarine;
-  background-image: url('./components/main-content/common/hitagi.png');
   background-size: 100%;
   background-attachment: fixed;
 }
