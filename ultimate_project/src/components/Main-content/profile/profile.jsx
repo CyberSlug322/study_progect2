@@ -11,7 +11,7 @@ export const Profile = ({ profile, dispatch }) => {
             text: textAreaRef.current.value
         })
     };
-
+debugger
         return (
             <div className={style.profile}>
             <img src={'https://i.pinimg.com/236x/9a/da/96/9ada96a378cf24b35ec421125625cdc3.jpg'}

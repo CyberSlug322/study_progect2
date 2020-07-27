@@ -17,9 +17,9 @@ export const MainContent = ({state, dispatch}) => {
             
                 {/* <Route path={'/myWall'} component={()=><MyWall state={state} dispatch={dispatch}/>} /> */}
                 <Route path={'/walls/walls'} component={()=><Walls state={state} dispatch={dispatch}/>} />
-                <Route path={'/myTreds'} component={()=><Treds state={state.post} dispatch={dispatch}/>} />
-                <Route path={'/profile'} component={()=><Profile state={state.profile} dispatch={dispatch}/>} />
-                 { <Route exact path={'/myTreds/tred1'} component={()=><Posts state={state.treds[0].posts} dispatch={dispatch}/>} /> } 
+                <Route exact path={'/myTreds'} component={()=><Treds state={state.post} dispatch={dispatch}/>} />
+                <Route path={'/profile'} component={()=><Profile profile={state.profile} dispatch={dispatch}/>} />
+                 { <Route path={'/myTreds/tred1'} component={()=><Posts state={state.post.treds[0].posts} dispatch={dispatch}/>} /> } 
               {/* <Treds /> */}
         </div>
     )
