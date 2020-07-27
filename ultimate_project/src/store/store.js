@@ -70,7 +70,7 @@ const profileReducer = (state = profileState, action) => {
 
 export let store = createStore(combineReducers({
     profile: profileReducer,
-    post: postReducer 
+    postObj: postReducer 
 }));
 
 window.store = store

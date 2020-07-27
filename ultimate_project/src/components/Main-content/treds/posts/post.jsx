@@ -1,8 +1,8 @@
 import React from 'react';
-// import '../App.css'
+import style from './post.module.css';
 
 export const Post = (props) => {
     return (
-    <div className={'post'}> {props.postTitle} </div>
+    <div className={style.post}> {props.postTitle} </div>
     )
 };
