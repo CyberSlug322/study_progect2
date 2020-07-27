@@ -10,9 +10,11 @@ export const Posts = ({state, dispatch}) => {
                 postTitle: 'new title'
             })
     };
+    
     return (
+        
         <div className={style.posts}>
-            {state.treds[0].posts.map( (post) => {return <Post postTitle={post.postTitle} />} )}
+            {state.map( (post) => {return <Post postTitle={post.postTitle} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )

@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './treds.module.css'
 import { NavLink } from 'react-router-dom';
-  import{ Posts } from './posts/posts';
+  
  
 
 
@@ -75,7 +75,7 @@ export const Treds = () => {
                 <h4>tred title</h4>
                 </div>
                 <span>tred description Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem, nihil!</span>   
-                <Posts />         
+                    
             </div>
         </div>
     )
