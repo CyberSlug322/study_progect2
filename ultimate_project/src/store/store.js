@@ -42,17 +42,16 @@ let initialState = {
 }
 
 let postReducer = (state = initialState, action) => {
-    if ( state === initialState ) {
+    
+    if ( action.type === 'ADD_POST' ) {
+        
+        let stateCopy = {...state, treds: [...state.treds]};
+        stateCopy.treds[0].posts.push({ postTitle: 'new title' })
+        stateCopy.treds[0] = {...stateCopy.treds[0], posts: [...stateCopy.treds[0].posts]}
+            return stateCopy;
+    } else {
         return {...state}
     }
-    switch (action.type) {
-        case 'ADD_POST' : return {...state, postTitle: 'new title' }
-
-        
-
-        default:
-            return state;
-    };
 }
 
 export let store = createStore(combineReducers({
