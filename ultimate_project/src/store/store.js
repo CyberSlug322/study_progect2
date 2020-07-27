@@ -1,4 +1,5 @@
 import { createStore, combineReducers } from 'redux';
+import {profileReducer} from './reducers/profileReducer.js'
 
 let initialState = {
     treds: [
@@ -53,21 +54,6 @@ let postReducer = (state = initialState, action) => {
             return state;
     };
 }
-
-let profileState = {
-    profileText: ''
-}
-
-const profileReducer = (state = profileState, action) => {
-    if (action.type === 'CHANGE_PROFILE_TEXT') {
-        //state.profileText = action.text;
-         return {...state, profileText: action.text}
-        //return state
-    }
-    return state;
-}
-
-
 
 export let store = createStore(combineReducers({
     profile: profileReducer,
