@@ -2,19 +2,20 @@ import React from 'react';
 import { Post } from './post';
 // import style from '../communities.module.css';
 
-export const Posts = ({ postObj, dispatch }) => {
+export const PostsCreator = ({ postObj, dispatch }) => {
     let addPost = () => {
         dispatch(
             {
                 type: 'ADD_POST',
-                postTitle: 'new title'
+                postTitle: 'new title',
+                id: 'Date.now()'
             })
     };
     
     return (
         
         <div >
-            {postObj.map( (post) => {return <Post postTitle={post.postTitle} />} )}
+            {postObj.map( (post) => {return <Post postTitle={post.postTitle} postId={post.id} postObj = {postObj} dispatch = {dispatch} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )

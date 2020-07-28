@@ -9,8 +9,8 @@ export const Post = (props) => {
     <div className={style.post}> {props.postTitle} 
     <PostHeader />
     <PostMainContent />
-    <PostFooter />
-    <img src={'https://cs9.pikabu.ru/post_img/2017/02/07/8/og_og_1486475033280814266.jpg'} alt={'nt found'}/>
+    <PostFooter dispatch = {props.dispatch} postObj = {props.postObj} postId = {props.postId} />
+    
     </div>
     )
 };
