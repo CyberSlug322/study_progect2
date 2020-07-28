@@ -1,9 +1,11 @@
 .post {
-    background-color: whitesmoke;
+    color: aliceblue;
+    background-color: rgb(0, 0, 0);
     height: fit-content;
     width: 90%;
     max-width: 1063px;
     margin-bottom: 10px;
     padding: 7px;
     border-radius: 5px;
+    
     }

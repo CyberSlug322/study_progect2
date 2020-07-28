@@ -1,6 +1,6 @@
 import React from 'react';
 import { Post } from './post';
-import style from '../treds.module.css';
+// import style from '../communities.module.css';
 
 export const Posts = ({ postObj, dispatch }) => {
     let addPost = () => {
@@ -13,9 +13,10 @@ export const Posts = ({ postObj, dispatch }) => {
     
     return (
         
-        <div className={style.posts}>
+        <div >
             {postObj.map( (post) => {return <Post postTitle={post.postTitle} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )
 }
+// className={style.posts}
