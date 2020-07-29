@@ -1,5 +1,7 @@
 import { createStore, combineReducers } from 'redux';
-import {profileReducer} from './reducers/profileReducer.js'
+
+const USER_NAME_ON_CHANGE = 'USER_NAME_ON_CHANGE';
+
 
 let initialState = {
     treds: [
@@ -54,9 +56,42 @@ let postReducer = (state = initialState, action) => {
     }
 }
 
+let profileState = {
+    profileText: '',
+    userName: 'Egor',
+    userNameOnFocus: false,
+
+}
+
+const profileReducer = (state = profileState, action) => {
+    switch (action.type) {
+
+        case 'CHANGE_PROFILE_TEXT':
+            return { ...state, profileText: action.text };
+
+        case 'USER_NAME_ON_FOCUS':
+            return {...state, userNameOnFocus: true};
+
+        case 'USER_NAME_UN_FOCUS':
+            return {...state, userNameOnFocus: false};
+
+        case USER_NAME_ON_CHANGE:
+            return {...state, userName: action.userName}
+
+        default:
+            return state;
+
+    }
+}
+
 export let store = createStore(combineReducers({
     profile: profileReducer,
     post: postReducer 
 }));
 
-window.store = store
+export const userNameOnChangeAC = (userName) => {
+    return {
+        type: 'USER_NAME_ON_CHANGE',
+        userName: userName
+    }
+}

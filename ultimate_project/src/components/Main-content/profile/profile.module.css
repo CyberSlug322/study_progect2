@@ -11,3 +11,7 @@ textarea {
 h4 {
     display: inline;
 }
+
+.hidden {
+    visibility: hidden;
+}

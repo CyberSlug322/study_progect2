@@ -11,7 +11,7 @@ import { Posts } from './treds/posts/posts';
 
 
 export const MainContent = ({state, dispatch}) => {
-    debugger
+
     return (
         <div className={style.mainContent}>
             
