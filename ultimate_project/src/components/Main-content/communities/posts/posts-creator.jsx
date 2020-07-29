@@ -15,7 +15,7 @@ export const PostsCreator = ({ postObj, dispatch }) => {
     return (
         
         <div >
-            {postObj.map( (post) => {return <Post postTitle={post.postTitle} postId={post.id} postObj = {postObj} dispatch = {dispatch} />} )}
+            {postObj.map( (post) => {return <Post postTitle={post.postTitle} postId={post.id}  dispatch = {dispatch} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )
