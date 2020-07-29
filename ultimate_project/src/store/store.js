@@ -44,23 +44,21 @@ let initialState = {
 }
 
 let postReducer = (state = initialState, action) => {
-
+                                                                        
     switch (action.type) {
         case 'ADD_POST':
             let stateCopy = { ...state, treds: [...state.treds] };
-            stateCopy.treds[0].posts.push({ postTitle: 'new title' })
+            stateCopy.treds[0].posts.push({ postTitle: 'new title', id: Date.now()})
             stateCopy.treds[0] = { ...stateCopy.treds[0], posts: [...stateCopy.treds[0].posts] }
                 return stateCopy;
         case 'DELETE_POST':
             let stateCopy1 = { ...state, treds: [...state.treds] };
-            stateCopy1.treds[0].posts.forEach(element => { 
-                let i = 0;
-                if ( element.id === action.id) {
-                    stateCopy1.treds[0].posts.splice( i, 1 );
-                    stateCopy1.treds[0] = { ...stateCopy1.treds[0] };
-                    return stateCopy1;
-
-                } else i++;
+            stateCopy1 = { ...state, posts: [...stateCopy1.treds[0].posts]}
+            stateCopy1.treds[0].posts.filter(element => { 
+                debugger
+                if ( element.id !== action.id) {
+                    return true;
+                } else return false;
             });
 
         // case 'EDIT_POST':

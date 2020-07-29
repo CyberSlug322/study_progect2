@@ -8,7 +8,7 @@ export const PostsCreator = ({ postObj, dispatch }) => {
             {
                 type: 'ADD_POST',
                 postTitle: 'new title',
-                id: 'Date.now()'
+                id: Date.now()
             })
     };
     

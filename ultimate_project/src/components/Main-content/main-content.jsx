@@ -13,6 +13,7 @@ import { PostsCreator } from './communities/posts/posts-creator';
 export const MainContent = ({state, dispatch}) => {
 
     return (
+
         <div className={style.mainContent}>
             
                 {/* <Route path={'/myWall'} component={()=><MyWall state={state} dispatch={dispatch}/>} /> */}
