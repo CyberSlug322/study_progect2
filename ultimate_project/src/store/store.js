@@ -60,7 +60,7 @@ let postReducer = (state = initialState, action) => {
                     return true;
                 } else return false;
             });
-
+            return stateCopy1;
         // case 'EDIT_POST':
         // case 'LIKED':
      
