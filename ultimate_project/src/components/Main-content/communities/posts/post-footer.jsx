@@ -18,7 +18,7 @@ export const PostFooter = ( props ) => {
         props.dispatch(
             {
                 type: "DELETE_POST",
-                postId : props.postObj.postId
+                postId : props.postId
             }
         )
     }
