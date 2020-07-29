@@ -54,12 +54,8 @@ let postReducer = (state = initialState, action) => {
         case 'DELETE_POST':
             let stateCopy1 = { ...state, treds: [...state.treds] };
             stateCopy1 = { ...state, posts: [...stateCopy1.treds[0].posts]}
-            stateCopy1.treds[0].posts.filter(element => { 
-                debugger
-                if ( element.id !== action.id) {
-                    return true;
-                } else return false;
-            });
+            stateCopy1.treds[0].posts.filter(element => element.id !== action.id);
+            return stateCopy1;
 
         // case 'EDIT_POST':
         // case 'LIKED':
