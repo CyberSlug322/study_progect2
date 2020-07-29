@@ -10,7 +10,7 @@ export const Navbar = (props) => {
 
             <NavLink className={style.link} to={'/walls'}><div className={style.button}>walls</div></NavLink>
 
-            <NavLink className={style.link} to={'/myTreds'}><div className={style.button}>my treds</div></NavLink>
+            <NavLink className={style.link} to={'/myCommunities'}><div className={style.button}>myCommunities</div></NavLink>
 
             <NavLink className={style.link} to={'/profile'}><div className={style.button}>profile</div></NavLink>
 
