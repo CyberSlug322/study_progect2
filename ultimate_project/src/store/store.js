@@ -4,9 +4,10 @@ const USER_NAME_ON_CHANGE = 'USER_NAME_ON_CHANGE';
 
 
 let initialState = {
-    treds: [
+    communities: [
         {
-            tredTitle: 'anime girls',
+            communityTitle: 'anime girls',
+            communityId: '1',
             members: [
                 {
                     userId: 121,
@@ -19,14 +20,30 @@ let initialState = {
                 { postTitle: 'title post 2', id: '2' },
                 { postTitle: 'title post 3', id: '3' },
             ]
+        },
+        {
+            communityTitle: 'anime girls',
+            communityId: '2',
+            members: [
+                {
+                    userId: 121,
+                    userName: 'Viktor',
+                    userAvatarSrc: 'src'
+                }
+            ],
+            posts: [
+                { postTitle: 'title post 1', postId: '1' },
+                { postTitle: 'title post 2', postId: '2' },
+                { postTitle: 'title post 3', postId: '3' },
+            ]
         }
     ],
     user: {
         userId: 121,
         UserName: 'Anton',
-        subscribeTreds: [],
-        userTred: {
-            tredTitle: 'anime girls',
+        subscriptions: [],
+        communitiesByUser: {
+            communityTitle: 'anime girls',
             members: [
                 {
                     userId: 121,
@@ -43,19 +60,19 @@ let initialState = {
     }
 }
 
-let postReducer = (state = initialState, action) => {
+let communityReducer = (state = initialState, action) => {
     let stateCopy                                    
     switch (action.type) {
         case 'ADD_POST':
-            stateCopy = { ...state, treds: [...state.treds] };
-            stateCopy.treds[0].posts.push({ postTitle: 'new title', id: Date.now()})
-            stateCopy.treds[0] = { ...state.treds[0], posts: [...state.treds[0].posts] }
+            stateCopy = { ...state, communities: [...state.communities] };
+            stateCopy.communities[0].posts.push({ postTitle: 'new title', id: Date.now()})
+            stateCopy.communities[0] = { ...state.communities[0], posts: [...state.communities[0].posts] }
                 return stateCopy;
         case 'DELETE_POST':
             // debugger
-            stateCopy = { ...state, treds: [...state.treds] };
-            stateCopy.treds[0] = { ...state.treds[0], posts: [...state.treds[0].posts]}
-            stateCopy.treds[0].posts = stateCopy.treds[0].posts.filter(element => element.id !== action.postId);
+            stateCopy = { ...state, communities: [...state.communities] };
+            stateCopy.communities[0] = { ...state.communities[0], posts: [...state.communities[0].posts]}
+            stateCopy.communities[0].posts = stateCopy.communities[0].posts.filter(element => element.id !== action.postId);
             return stateCopy;
 
         // case 'EDIT_POST':
@@ -98,7 +115,7 @@ const profileReducer = (state = profileState, action) => {
 
 export let store = createStore(combineReducers({
     profile: profileReducer,
-    postObj: postReducer
+    communityArr: communityReducer
 }));
 
 export const userNameOnChangeAC = (userName) => {

@@ -9,7 +9,7 @@ export const Post = (props) => {
     <div className={style.post}> {props.postTitle} 
     <PostHeader />
     <PostMainContent />
-    <PostFooter dispatch = {props.dispatch} postObj = {props.postObj} postId = {props.postId} />
+    <PostFooter dispatch = {props.dispatch} postObj = {props.postArr} postId = {props.postId} />
     
     </div>
     )
