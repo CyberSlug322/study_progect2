@@ -8,7 +8,7 @@ let initialState = {
         {
             communityTitle: 'anime girls',
             communityId: '1',
-            url: '/community1',
+            url: '/myCommunities/community1',
             members: [
                 {
                     userId: 121,
@@ -25,7 +25,7 @@ let initialState = {
         {
             communityTitle: 'anime girls',
             communityId: '2',
-            url: '/community2',
+            url: '/myCommunities/community2',
             members: [
                 {
                     userId: 121,

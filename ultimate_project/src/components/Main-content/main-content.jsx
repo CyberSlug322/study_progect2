@@ -11,7 +11,7 @@ import { Profile } from './profile/profile';
 
 
 export const MainContent = ({state, dispatch}) => {
-
+    debugger
     return (
 
         <div className={style.mainContent}>
@@ -20,7 +20,9 @@ export const MainContent = ({state, dispatch}) => {
                 <Route path={'/walls/walls'} component={()=><Walls state={state} dispatch={dispatch}/>} />
                 <Route exact path={'/myCommunities'} component={()=><Communities communityArr={state.communityArr} dispatch={dispatch}/>} />
                 <Route path={'/profile'} component={()=><Profile profile={state.profile} dispatch={dispatch}/>} />
-                {<Route path={'/myCommunities/Community1'} component={()=><PostsCreator communityArr={state.communityArr.communities[0].posts} dispatch={dispatch}/>} /> } 
+                
+                {state.communityArr.communities.map( (community) => { return <Route path={community.url} component={()=><PostsCreator postsArr={community.posts} dispatch={dispatch}/>}/> })}
+                {/* <Route path={'/myCommunities/Community1'} component={()=><PostsCreator communityArr={state.communityArr.communities[0].posts} dispatch={dispatch}/>} />  */}
               {/* <Treds /> */}
         </div>
     )

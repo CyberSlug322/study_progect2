@@ -2,7 +2,7 @@ import React from 'react';
 import { Post } from './post';
 // import style from '../communities.module.css';
 
-export const PostsCreator = ({ communityArr, dispatch }) => {
+export const PostsCreator = ({ postsArr, dispatch }) => {
     let addPost = () => {
         dispatch(
             {
@@ -15,7 +15,7 @@ export const PostsCreator = ({ communityArr, dispatch }) => {
     return (
         
         <div >
-            {communityArr.map( (post) => {return <Post postTitle={post.postTitle} postId={post.id}  dispatch = {dispatch} />} )}
+            {postsArr.map( (post) => {return <Post postTitle={post.postTitle} postId={post.id}  dispatch = {dispatch} />} )}
             <button onClick={addPost}>add post</button>
         </div>
     )
